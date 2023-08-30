@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="">
+    </header>
+    <main>
+        <div class="content">
+            <div class="content-money-number">
+                <label for="money-number">Bill</label>
+                <img src="./images/icon-dollar.svg" alt="">
+                <input type="number" placeholder="0" id="money-number"/>
+            </div>
+            <div class="content-discount">
+                <p>Select Tip %</p>
+                <div class="discount-buttons">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <label for="customer-percentage">
+                        <input type="number" placeholder="custom">
+                    </label>
+                </div>
+            </div>
+            <div class="content-number-people">
+                <label for="number-people">Number of People</label>
+                <img src="./images/icon-person.svg" alt="">
+                <input type="number" placeholder="" id="number-people">
+            </div>
+        </div>
+
+
+        <div class="content-result">
+            <div>
+                <div class="result-aumont">
+                    <section>
+                        <h2>Tip Amount</h2>
+                        <p>/ person</p>
+                    </section>
+                    <p class="result-number">$0.00</p>
+                </div>
+                <div class="result-total">
+                    <section>
+                        <h2>Total</h2>
+                        <p>/ person</p>
+                    </section>
+                    <p class="result-number">$0.00</p>
+                </div>
+            </div>
+            <button>RESET</button>
+        </div>
+    </main>
+</body>
+</html>
