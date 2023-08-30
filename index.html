@@ -24,20 +24,20 @@
             <div class="content-discount">
                 <p>Select Tip %</p>
                 <div class="discount-buttons">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
+                    <button id="tip-porcentage5">5%</button> 
+                    <button id="tip-porcentage10">10%</button> 
+                    <button id="tip-porcentage15">15%</button> 
+                    <button id="tip-porcentage25">25%</button> 
+                    <button id="tip-porcentage50">50%</button> 
                     <label for="customer-percentage">
-                        <input type="number" placeholder="custom">
+                        <input type="number" placeholder="custom" id="own-tip-percentage">
                     </label>
                 </div>
             </div>
             <div class="content-number-people">
-                <label for="number-people">Number of People</label>
+                <label for="number-people">Number of People <span id="text-error" class="text-error"></span></label>
                 <img src="./images/icon-person.svg" alt="">
-                <input type="number" placeholder="" id="number-people">
+                <input type="number" placeholder="0" id="number-people">
             </div>
         </div>
 
@@ -49,18 +49,21 @@
                         <h2>Tip Amount</h2>
                         <p>/ person</p>
                     </section>
-                    <p class="result-number">$0.00</p>
+                    <p id="tip-person" class="result-number">$0.00</p>
                 </div>
                 <div class="result-total">
                     <section>
                         <h2>Total</h2>
                         <p>/ person</p>
                     </section>
-                    <p class="result-number">$0.00</p>
+                    <p id="tip-total" class="result-number">$0.00</p>
                 </div>
             </div>
-            <button>RESET</button>
+            <button id="reset-page">RESET</button>
         </div>
     </main>
+
+
+    <script src="./app.js"></script>
 </body>
 </html>
