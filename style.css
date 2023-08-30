@@ -1,0 +1,284 @@
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --cyan: #9FE8DF;
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    background: var(--Light-grayish-cyan);
+}
+
+header img {
+    width: 86px;
+    height: 53px;
+    margin-top: 163px;
+    margin-bottom: 87px;
+}
+
+main {
+    width: 920px;
+    height: 481px;
+    border-radius: 25px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 239px;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    background: var(--White);
+}
+
+.content {
+    padding-top: 10px;
+}
+
+.content-money-number {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content-money-number label {
+    color: var(--Dark-grayish-cyan);
+
+}
+.content-money-number img {
+    width: 9px;
+    height: 15px;
+    position: absolute;
+    top: 46px;
+    left: 19px;
+}
+.content-money-number input {
+    width: 379px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    text-align: right;
+    padding-right: 17px;
+    margin-top: 6px;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    color: var(--Very-dark-cyan);
+    caret-color: var(--Strong-cyan);
+    cursor: pointer;
+    outline: none;
+    background: hsla(185, 41%, 84%, 0.432);
+}
+.content-money-number input:focus {
+    border: 2px solid var(--Strong-cyan);
+}
+.content-money-number input[type=number]::-webkit-inner-spin-button, 
+.content-money-number input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.content-discount {
+    width: 379px;
+    margin-top: 40px;
+}
+.content-discount p {
+    margin-bottom: 16px;
+    color: var(--Dark-grayish-cyan);
+}
+.discount-buttons {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.discount-buttons button {
+    width: 117px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    background: var(--Very-dark-cyan);
+    color: var(--White);
+}
+.discount-buttons button:hover {
+    background: var(--cyan);
+    color: var(--Very-dark-cyan);
+}
+.content-discount input {
+    width: 117px;
+    height: 48px;
+    border-radius: 5px;
+    padding-right: 12px;
+    border: none;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    outline: none;
+    caret-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    background: hsla(185, 41%, 84%, 0.432);
+}
+.content-discount input:focus {
+    border: 2px solid var(--Strong-cyan);
+}
+.content-discount input[type=number]::-webkit-inner-spin-button, 
+.content-discount input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.content-number-people {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 40px;
+}
+.content-number-people label {
+    margin-bottom: 6px;
+    color: var(--Dark-grayish-cyan);
+}
+.content-number-people img {
+    width: 15px;
+    height: 15px;
+    top: 46px;
+    left: 17px;
+    position: absolute;
+}
+.content-number-people input {
+    width: 379px;
+    height: 48px;
+    padding-right: 17px;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    outline: none;
+    color: var(--Very-dark-cyan);
+    caret-color: var(--Strong-cyan);
+    background: hsla(185, 41%, 84%, 0.432);
+}
+.content-number-people input:focus {
+    border: 2px solid var(--Strong-cyan);
+}
+.content-number-people input[type=number]::-webkit-inner-spin-button, 
+.content-number-people input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+.content-result {
+    width: 413px;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--Very-dark-cyan);
+}
+.result-aumont,
+.result-total {
+    width: 333px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.result-aumont {
+    margin-bottom: 40px;
+}
+section h2 {
+    font-size: 16px;
+    color: var(--White);
+}
+section p {
+    font-size: 13px;
+    color: var(--Dark-grayish-cyan);
+}
+.result-number {
+    color: var(--Strong-cyan);
+    font-size: 48px;
+}
+.content-result button {
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    color: var(--Very-dark-cyan);
+    background: var(--Strong-cyan);
+}
+.content-result button:hover {
+    cursor: pointer;
+    background: var(--cyan);
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 86px;
+        height: 53px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    main {
+        width: 375px;
+        height: 789px;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .content-money-number input {
+        width: 311px;
+    }
+
+    .content-discount {
+        margin-top: 32px;
+        width: 0;
+    }
+    .discount-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+    .discount-buttons button {
+        width: 146px;
+    } 
+    .content-discount p {
+        width: 120px;
+    }
+    .content-discount input {
+        width: 147px;
+        padding-right: 30px;
+    }
+    .content-number-people input {
+        width: 311px;
+    }
+    .content-number-people {
+        margin-top: 32px;
+    }
+    .content-result {
+        width: 310px;
+        height: 257px;
+        padding: 24px;
+    }
+    .result-aumont,
+    .result-total {
+        width: 262px;
+        height: 47px;
+    }
+    .result-aumont {
+        margin-bottom: 22px;
+    }
+    .result-number {
+        font-size: 32px;
+    }
+}
