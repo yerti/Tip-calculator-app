@@ -7,6 +7,7 @@
     --Light-grayish-cyan: hsl(185, 41%, 84%);
     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
+    --orange: #E17052;
 }
 * {
     box-sizing: border-box;
@@ -177,6 +178,10 @@ main {
     -webkit-appearance: none; 
     margin: 0;
 }
+.text-error {
+    margin-left: 80px;
+    color: var(--orange);
+}
 
 .content-result {
     width: 413px;
@@ -261,6 +266,9 @@ section p {
     }
     .content-number-people input {
         width: 311px;
+    }
+    .text-error {
+        margin-left: 12px;
     }
     .content-number-people {
         margin-top: 32px;
