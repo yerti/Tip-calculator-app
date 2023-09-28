@@ -31,8 +31,10 @@ function calculateThe5Tip() {
 
         let calculateTipTotal = (moneyTotal * (5 / 100));
         let calculateTipPeople = calculateTipTotal / numberPeople;
+        let totalMoney = moneyTotal + calculateTipTotal
+        let personTotalMoney = totalMoney / numberPeople
 
-        tipTotalP.innerHTML = calculateTipTotal.toFixed(2);
+        tipTotalP.innerHTML = personTotalMoney.toFixed(2);
         tipPersonP.innerHTML = calculateTipPeople.toFixed(2)
     }
 }
@@ -47,9 +49,11 @@ function calculateThe10Tip() {
         textErrorSpan.innerHTML = "";
 
         let calculateTipTotal = (moneyTotal * (10 / 100));
-        let calculateTipPeople = calculateTipTotal / numberPeople;
+        let calculateTipPeople = (calculateTipTotal / numberPeople);
+        let totalMoney = moneyTotal + calculateTipTotal
+        let personTotalMoney = totalMoney / numberPeople
 
-        tipTotalP.innerHTML = calculateTipTotal.toFixed(2);
+        tipTotalP.innerHTML = personTotalMoney.toFixed(2);
         tipPersonP.innerHTML = calculateTipPeople.toFixed(2)
     }
 }
@@ -65,8 +69,10 @@ function calculateThe15Tip() {
 
         let calculateTipTotal = (moneyTotal * (15 / 100));
         let calculateTipPeople = calculateTipTotal / numberPeople;
+        let totalMoney = moneyTotal + calculateTipTotal
+        let personTotalMoney = totalMoney / numberPeople
 
-        tipTotalP.innerHTML = calculateTipTotal.toFixed(2);
+        tipTotalP.innerHTML = personTotalMoney.toFixed(2);
         tipPersonP.innerHTML = calculateTipPeople.toFixed(2)
     }
 }
@@ -82,8 +88,11 @@ function calculateThe25Tip() {
 
         let calculateTipTotal = (moneyTotal * (25 / 100));
         let calculateTipPeople = calculateTipTotal / numberPeople;
+        let totalMoney = moneyTotal + calculateTipTotal
+        let personTotalMoney = totalMoney / numberPeople
+        
 
-        tipTotalP.innerHTML = calculateTipTotal.toFixed(2);
+        tipTotalP.innerHTML = personTotalMoney.toFixed(2);
         tipPersonP.innerHTML = calculateTipPeople.toFixed(2)
     }
 }
@@ -99,8 +108,10 @@ function calculateThe50Tip() {
 
         let calculateTipTotal = (moneyTotal * (50 / 100));
         let calculateTipPeople = calculateTipTotal / numberPeople;
+        let totalMoney = moneyTotal + calculateTipTotal
+        let personTotalMoney = totalMoney / numberPeople
 
-        tipTotalP.innerHTML = calculateTipTotal.toFixed(2);
+        tipTotalP.innerHTML = personTotalMoney.toFixed(2);
         tipPersonP.innerHTML = calculateTipPeople.toFixed(2)
     }
 }
@@ -117,8 +128,10 @@ function calculateOwnTip() {
         
         let calculateTipTotal = (moneyTotal * (tippercentege / 100));
         let calculateTipPeople = calculateTipTotal / numberPeople;
+        let totalMoney = moneyTotal + calculateTipTotal
+        let personTotalMoney = totalMoney / numberPeople
 
-        tipTotalP.innerHTML = calculateTipTotal.toFixed(2);
+        tipTotalP.innerHTML = personTotalMoney.toFixed(2);
         tipPersonP.innerHTML = calculateTipPeople.toFixed(2)
     }
 }
