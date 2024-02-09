@@ -10,7 +10,13 @@ const tipTotalP = document.querySelector("#tip-total");
 const textErrorSpan = document.querySelector("#text-error");
 const resetButtom = document.querySelector("#reset-page");
 const ownTipPercentage = document.querySelector("#own-tip-percentage")
+let swLocation = "sw.js";
 
+if(navigator.serviceWorker) {
+    if (window.location.href.includes("localhost")) swLocation = "/sw.js";
+
+    navigator.serviceWorker.register(swLocation);
+}
 
 tip5pButtom.addEventListener('click', calculateThe5Tip);
 tip10pButtom.addEventListener('click', calculateThe10Tip);

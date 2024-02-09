@@ -1,0 +1,32 @@
+{
+  "short_name": "Tip calculator",
+  "name": "Tip Calculator Web Aplication",
+  "icons": [
+    {
+      "src": "images/icon-calculator-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-calculator-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-calculator-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-calculator-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#9FE8DF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "hsl(183, 100%, 15%)",
+  "description": "Tip calculator when we go to a restaurant"
+}
