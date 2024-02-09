@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon-calculator-192.png">
+
   </head>
   <body>
     <header>
@@ -77,5 +80,20 @@
     </main>
 
     <script src="./app.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((reg) =>
+              console.log("Service Worker registrado correctamente", reg)
+            )
+            .catch((err) =>
+              console.log("Error al registrar el Service Worker", err)
+            );
+        });
+      }
+    </script>
   </body>
 </html>
